@@ -29,7 +29,7 @@ This project is meant to create and develop a personal portfolio page. This page
 
 ![Project][project-screenshot]
 
-![Contact][content-screenshot]
+![Contact][contact-screenshot]
 
 You can access the updated website at the following link:
 * [Deployed Application]()
