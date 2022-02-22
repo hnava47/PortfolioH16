@@ -1,0 +1,285 @@
+nav {
+    background-color: #1877F2;
+}
+
+body {
+    background-color: #F0F2F5;
+    color: #050505;
+}
+
+h1 {
+    color: #1877F2;
+    font-size: 80px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h8 {
+    font-size: 12px;
+}
+
+form {
+    background-color: #FFFFFF;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fade-in-element {
+    animation: fade-in 2s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#profile-pic {
+    background-color: #1877F2;
+    border-radius: 23% 77% 70% 30% / 30% 75% 25% 70%;
+}
+
+@keyframes arrow {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+.arrows {
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+}
+
+.arrows path {
+	stroke: #1877F2;
+	fill: transparent;
+	stroke-width: 1px;
+	animation: arrow 2s infinite;
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+}
+
+.arrows path.a3 {
+	animation-delay:0s;
+}
+
+.gear-container{
+    min-width: 320px;
+    max-width: 980px;
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    position: relative;
+    min-height: 320px;
+}
+
+@keyframes clockWise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes counterClockWise {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.gear {
+    float: none;
+    position: absolute;
+    text-align: center;
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+#gear1 {
+    background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g1.png') no-repeat 0 0;
+    height: 85px;
+    left: 31px;
+    top: 45px;
+    width: 85px;
+
+    animation-name: clockWise;
+    animation-duration: 10s;
+}
+
+#gear2 {
+    background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g2.png') no-repeat 0 0;
+    height: 125px;
+    left: 105px;
+    top: 10px;
+    width: 125px;
+
+    animation-name: counterClockWise;
+    animation-duration: 16.84s;
+}
+
+#gear3 {
+    background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g3.png') no-repeat 0 0;
+    height: 103px;
+    left: 149px;
+    top: 118px;
+    width: 103px;
+
+    animation-name: clockWise;
+    animation-duration: 13.5s;
+}
+
+#gear4 {
+    background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g4.png') no-repeat 0 0;
+    height: 144px;
+    left: 46px;
+    top: 173px;
+    width: 144px;
+
+    animation-name: counterClockWise;
+    animation-duration: 20.2s;
+}
+
+#gear5 {
+    background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g1.png') no-repeat 0 0;
+    height: 85px;
+    left: 127px;
+    top: 292px;
+    width: 85px;
+
+    animation-name: clockWise;
+    animation-duration: 10s;
+}
+
+#gear6 {
+    background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g2.png') no-repeat 0 0;
+    height: 125px;
+    left: 200px;
+    top: 283px;
+    width: 125px;
+
+    animation-name: counterClockWise;
+    animation-duration: 16.84s;
+}
+
+#gear7 {
+    background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g3.png') no-repeat 0 0;
+    height: 103px;
+    left: 277px;
+    top: 217px;
+    width: 103px;
+
+    animation-name: clockWise;
+    animation-duration: 13.5s;
+}
+
+.custom-btn {
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #050505;
+}
+
+.custom-btn:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #1877F2;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.custom-btn:hover {
+    color: #FFFFFF;
+    cursor: default;
+}
+
+.custom-btn:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.custom-btn:active:before {
+    background: #1877F2;
+    transition: background 0s;
+}
+
+.custom-shadow {
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+
+}
+
+.carousel-control-prev {
+    left: -110px;
+    border-bottom: 0;
+    font-size: 40px;
+    color: #444;
+}
+
+.carousel-control-next {
+    right: -110px;
+    border-bottom: 0;
+    font-size: 40px;
+    color: #444;
+}
+
+#social {
+    position: fixed;
+    top: 50%;
+}
+
+#social button:hover{
+    transform: translateX(10px);
+    transition: .5s;
+}
+
+#linkedin {
+    background: #0077ba;
+}
+
+#github {
+    background: #050505;
+}
+
+footer {
+    background-color:#FFFFFF;
+    color: #67696D;
+}
