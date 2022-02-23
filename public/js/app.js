@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    const $contFirstName = $('#firstNameField');
+    const $contLastName = $('#lastNameField');
+    const $contEmail = $('#emailField');
+    const $contMessage = $('#messageField');
+    const $submitForm = $('#contactForm')
+    const $successAlert = $('#successAlert');
     let elements;
     let windowHeight;
 
@@ -25,5 +31,32 @@ $(document).ready(function() {
     init();
     checkPosition();
 
+    $submitForm.on('submit', (event) => {
+        event.preventDefault();
 
+        Array.prototype.slice.call($submitForm)
+            .forEach( async (form) => {
+                if (form.checkValidity()) {
+                    await $.ajax({
+                        method: 'POST',
+                        url: '/email',
+                        headers: { 'Content-Type': 'application/json' },
+                        data: JSON.stringify({
+                            firstName: $contFirstName.val().trim(),
+                            lastName: $contLastName.val().trim(),
+                            email: $contEmail.val().trim(),
+                            message: $contMessage.val().trim()
+                        })
+                    });
+
+                    $successAlert.fadeIn();
+
+                    setTimeout( () => {
+                        $successAlert.fadeOut();
+                    }, 4000);
+                };
+
+                $submitForm.addClass('was-validated');
+            }, false)
+    });
 });

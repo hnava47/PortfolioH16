@@ -54,23 +54,35 @@
     </div>
     <div class="mt-5 py-5 hidden">
         <h1 class="mb-3">Contact:</h1>
-        <form class="p-2 rounded shadow w-75">
-            <div class="row g-3 my-2 mx-4">
+        <div id="contactCard" class="p-2 rounded shadow w-75">
+            <form id="contactForm" class="row g-3 my-2 mx-4 needs-validation" novalidate>
                 <div class="form-floating col-sm-6">
-                    <input id="firstNameField" type="text" class="form-control" placeholder="First name">
+                    <input id="firstNameField" type="text" class="form-control" placeholder="First name" required>
                     <label for="firstNameField">First name</label>
+                    <div class="invalid-feedback">
+                        Please provide a first name.
+                    </div>
                 </div>
                 <div class="form-floating col-sm-6">
-                    <input id="lastNameField" type="text" class="form-control" placeholder="Last name">
+                    <input id="lastNameField" type="text" class="form-control" placeholder="Last name" required>
                     <label for="lastNameField">Last name</label>
+                    <div class="invalid-feedback">
+                        Please provide a last name.
+                    </div>
                 </div>
                 <div class="form-floating col-12">
-                    <input id="emailField" type="email" class="form-control" placeholder="name@example.com">
+                    <input id="emailField" type="email" class="form-control" placeholder="name@example.com" required>
                     <label for="emailField">Email address</label>
+                    <div class="invalid-feedback">
+                        Please provide an email.
+                    </div>
                 </div>
                 <div class="form-floating">
-                    <textarea id="messageField" class="form-control" placeholder="Leave a message here" style="height: 150px; resize: none;"></textarea>
+                    <textarea id="messageField" class="form-control" placeholder="Leave a message here" style="height: 150px; resize: none;" required></textarea>
                     <label for="messageField">Message</label>
+                    <div class="invalid-feedback">
+                        Please provide a message.
+                    </div>
                 </div>
 
                 <hr class="my-4">
@@ -78,10 +90,11 @@
                 <div class="col-12">
                     <button id="submitBtn" class="btn btn-primary btn-lg" type="submit">Submit</button>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </main>
+{{> alertMessage}}
 <div id="social" class="btn-group-vertical" role="group" aria-label="Basic example">
     <h8 class="font-weight-bold">Follow me!</h8>
     <button id="linkedin" type="button" class="btn">
