@@ -2,12 +2,12 @@ $(document).ready(function() {
     let elements;
     let windowHeight;
 
-    function init() {
+    const init = () => {
         elements = $('.hidden');
         windowHeight = window.innerHeight;
     };
 
-    function checkPosition() {
+    const checkPosition = () => {
         for (let i = 0; i < elements.length; i++) {
             let element = elements[i];
             let positionFromTop = elements[i].getBoundingClientRect().top;
@@ -24,4 +24,6 @@ $(document).ready(function() {
 
     init();
     checkPosition();
+
+
 });

@@ -54,34 +54,30 @@
     </div>
     <div class="mt-5 py-5 hidden">
         <h1 class="mb-3">Contact:</h1>
-        <form class="p-3 rounded shadow">
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect2">Example multiple select</label>
-                <select multiple class="form-control" id="exampleFormControlSelect2">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <form class="p-2 rounded shadow w-75">
+            <div class="row g-3 my-2 mx-4">
+                <div class="form-floating col-sm-6">
+                    <input id="firstNameField" type="text" class="form-control" placeholder="First name">
+                    <label for="firstNameField">First name</label>
+                </div>
+                <div class="form-floating col-sm-6">
+                    <input id="lastNameField" type="text" class="form-control" placeholder="Last name">
+                    <label for="lastNameField">Last name</label>
+                </div>
+                <div class="form-floating col-12">
+                    <input id="emailField" type="email" class="form-control" placeholder="name@example.com">
+                    <label for="emailField">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <textarea id="messageField" class="form-control" placeholder="Leave a message here" style="height: 150px; resize: none;"></textarea>
+                    <label for="messageField">Message</label>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="col-12">
+                    <button id="submitBtn" class="btn btn-primary btn-lg" type="submit">Submit</button>
+                </div>
             </div>
         </form>
     </div>
