@@ -287,7 +287,6 @@ footer {
 
 @media screen and (max-width: 768px) {
     .custom-btn {
-        width: 140px;
         margin: 10px;
     }
 
