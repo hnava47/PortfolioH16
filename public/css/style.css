@@ -2,6 +2,24 @@ nav {
     background-color: #1877F2;
 }
 
+#social {
+    min-width: 5rem;
+    max-width: 5rem;
+}
+
+#social button:hover{
+    transform: translateX(10px);
+    transition: .5s;
+}
+
+#linkedin {
+    background: #0077ba;
+}
+
+#github {
+    background: #050505;
+}
+
 body {
     background-color: #F0F2F5;
     color: #050505;
@@ -9,7 +27,7 @@ body {
 
 h1 {
     color: #1877F2;
-    font-size: 80px;
+    /* font-size: 80px; */
 }
 
 h3 {
@@ -261,31 +279,8 @@ h8 {
     background-color: #FFFFFF;
 }
 
-.custom-alert {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
-
-#social {
-    position: fixed;
-    top: 50%;
-}
-
-#social button:hover{
-    transform: translateX(10px);
-    transition: .5s;
-}
-
-#linkedin {
-    background: #0077ba;
-}
-
-#github {
-    background: #050505;
-}
-
 footer {
     background-color:#FFFFFF;
     color: #67696D;
 }
+

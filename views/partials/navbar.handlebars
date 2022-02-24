@@ -1,26 +1,51 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark shadow">
-    <a class="navbar-brand ms-4" href="#">
-        <span style="font-size: 2em;">
-            <i class="fas fa-heading"></i>
-        </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#top">About Me<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#tech-skill">Technical Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#dev-project">Development Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <span style="font-size: 2em;">
+                <i class="fas fa-heading"></i>
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#top">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tech-skill">Technical Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dev-project">Development Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 576 512" style="fill: #FFFFFF;">
+                            <path d="M568.9 143.5l-150.9-138.2C404.8-6.773 384 3.039 384 21.84V96C241.2 97.63 128 126.1 128 260.6c0 54.3 35.2 108.1 74.08 136.2c12.14 8.781 29.42-2.238 24.94-16.46C186.7 252.2 256 224 384 223.1v74.2c0 18.82 20.84 28.59 34.02 16.51l150.9-138.2C578.4 167.8 578.4 152.2 568.9 143.5zM416 384c-17.67 0-32 14.33-32 32v31.1l-320-.0013V128h32c17.67 0 32-14.32 32-32S113.7 64 96 64H64C28.65 64 0 92.65 0 128v319.1c0 35.34 28.65 64 64 64l320-.0013c35.35 0 64-28.66 64-64V416C448 398.3 433.7 384 416 384z"/>
+                        </svg>
+                    </a>
+                    <ul id="social" class="dropdown-menu p-0" aria-labelledby="navbarDropdownMenuLink">
+                        <li id="linkedin">
+                            <a class="dropdown-item text-center" target="_blank" href="https://www.linkedin.com/in/hector-nava-mba" title="Connect on LinkedIn">
+                                <i style="font-size: 2em; color: #FFFFFF;" class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li id="github">
+                            <a class="dropdown-item text-center" target="_blank" href="https://github.com/hnava47" title="Follow on GitHub">
+                                <i style="font-size: 2em; color: #FFFFFF;" class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>

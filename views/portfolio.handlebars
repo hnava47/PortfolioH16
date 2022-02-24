@@ -5,8 +5,10 @@
             <h1>About Me</h1>
             {{> aboutme}}
         </div>
-        <div id="profile-pic" class="col">
-            <img src="./img/headshot-removebg.png" class="img-fluid rounded mx-auto d-block shawdow" alt="Headshot picture" />
+        <div class="col">
+            <div id="profile-pic">
+                <img src="./img/headshot-removebg.png" class="img-fluid rounded mx-auto d-block shawdow" alt="Headshot picture" />
+            </div>
         </div>
     </div>
     <div id="tech-skill" class="py-5">
@@ -17,7 +19,7 @@
         </svg>
     </div>
     <div class="row my-5 py-5 hidden">
-        <div class="col">
+        <div class="col mb-5">
             <div class="gear-container">
                 <div class="gear" id="gear1"></div>
                 <div class="gear" id="gear2"></div>
@@ -28,7 +30,7 @@
                 <div class="gear" id="gear7"></div>
                 </div>
         </div>
-        <div class="col">
+        <div class="col mt-5">
             <h1>Technical Skills</h1>
             {{> techSkills}}
         </div>
@@ -41,9 +43,11 @@
             <path class="a3" d="M0 40 L30 72 L60 40"></path>
         </svg>
     </div>
-    <div class="mt-5 py-5 hidden">
-        <h1 class="mb-3">Development Projects:</h1>
-        {{> carousel}}
+    <div class="row mt-5 py-5 hidden">
+        <div class="col">
+            <h1 class="mb-3">Development Projects</h1>
+            {{> carousel}}
+        </div>
     </div>
     <div id="contact" class="py-5">
         <svg class="arrows">
@@ -52,25 +56,14 @@
             <path class="a3" d="M0 40 L30 72 L60 40"></path>
         </svg>
     </div>
-    <div class="mt-5 py-5 hidden">
-        <h1 class="mb-3">Contact:</h1>
-        {{> contact}}
+    <div class="row mt-5 py-5 hidden">
+        <div class="col">
+            <h1 class="mb-3">Contact</h1>
+            {{> contact}}
+        </div>
     </div>
 </main>
 {{> alertMessage}}
-<div id="social" class="btn-group-vertical" role="group" aria-label="Basic example">
-    <h8 class="font-weight-bold">Follow me!</h8>
-    <button id="linkedin" type="button" class="btn">
-        <a target="_blank" href="https://www.linkedin.com/in/hector-nava-mba" title="Connect on LinkedIn">
-            <i style="font-size: 2em; color: #FFFFFF;" class="fab fa-linkedin-in"></i>
-        </a>
-    </button>
-    <button id="github" type="button" class="btn">
-        <a target="_blank" href="https://github.com/hnava47" title="Follow on GitHub">
-            <i style="font-size: 2em; color: #FFFFFF;" class="fab fa-github"></i>
-        </a>
-    </button>
-</div>
 <footer class="footer text-center mt-auto py-4">
     <div class="container">
         <span class="text-muted">This page was created by <strong>Hector Nava</strong> using the following technologies:</span>
@@ -87,8 +80,8 @@
                 <li class="list-inline-item">Font Awesome</li>
             </ul>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="https://9elements.github.io/fancy-border-radius">Fancy Border Radius</a></li>
-                <li class="list-inline-item"><a href="https://www.remove.bg/">Remove bg</a></li>
+                <li class="list-inline-item">Fancy Border Radius</li>
+                <li class="list-inline-item">Remove Bg</li>
             </ul>
         </div>
     </div>
