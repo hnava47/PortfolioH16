@@ -284,3 +284,12 @@ footer {
     color: #67696D;
 }
 
+@media screen and (max-width: 600px) {
+    .custom-btn {
+        font-size: 12px;
+    }
+
+    #contactCard {
+        width: 100%;
+    }
+}
