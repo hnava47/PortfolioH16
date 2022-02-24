@@ -261,6 +261,12 @@ h8 {
     background-color: #FFFFFF;
 }
 
+.custom-alert {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
 #social {
     position: fixed;
     top: 50%;

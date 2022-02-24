@@ -3,8 +3,8 @@ $(document).ready(function() {
     const $contLastName = $('#lastNameField');
     const $contEmail = $('#emailField');
     const $contMessage = $('#messageField');
-    const $submitForm = $('#contactForm')
-    const $successAlert = $('#successAlert');
+    const $submitForm = $('#contactForm');
+    const $liveToast = $('#liveToast')
     let elements;
     let windowHeight;
 
@@ -49,11 +49,9 @@ $(document).ready(function() {
                         })
                     });
 
-                    $successAlert.fadeIn();
+                    const toast = new bootstrap.Toast($liveToast);
 
-                    setTimeout( () => {
-                        $successAlert.fadeOut();
-                    }, 4000);
+                    toast.show();
                 };
 
                 $submitForm.addClass('was-validated');
