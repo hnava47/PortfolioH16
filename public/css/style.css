@@ -287,7 +287,8 @@ footer {
 
 @media screen and (max-width: 768px) {
     .custom-btn {
-        width: 142px;
+        width: 140px;
+        margin: 10px;
     }
 
     #contactCard {
