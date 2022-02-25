@@ -7,11 +7,6 @@ nav {
     max-width: 5rem;
 }
 
-#social button:hover{
-    transform: translateX(10px);
-    transition: .5s;
-}
-
 #linkedin {
     background: #0077ba;
 }
@@ -34,9 +29,6 @@ h3 {
     font-size: 30px;
 }
 
-h8 {
-    font-size: 12px;
-}
 
 @keyframes fade-in {
     from {opacity: 0;}
@@ -278,11 +270,6 @@ h8 {
 #contactCard {
     background-color: #FFFFFF;
     width: 75%;
-}
-
-footer {
-    background-color:#FFFFFF;
-    color: #67696D;
 }
 
 @media screen and (max-width: 768px) {
