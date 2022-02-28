@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
+const sslRedirect = require('heroku-ssl-redirect');
 const routes = require('./router');
 
 const app = express();
@@ -14,6 +15,7 @@ app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(sslRedirect());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 
