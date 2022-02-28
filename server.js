@@ -1,5 +1,6 @@
 require('dotenv').config();
-const sslRedirect = require('heroku-ssl-redirect').default;
+import herokuSSLRedirect from 'heroku-ssl-redirect'
+const sslRedirect = herokuSSLRedirect.default
 const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
