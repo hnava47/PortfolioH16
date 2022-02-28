@@ -2,17 +2,9 @@ nav {
     background-color: #1877F2;
 }
 
-#social {
-    min-width: 5rem;
-    max-width: 5rem;
-}
-
-#linkedin {
-    background: #0077ba;
-}
-
-#github {
-    background: #050505;
+.social {
+    font-size: 2em;
+    color: #FFFFFF;
 }
 
 body {
