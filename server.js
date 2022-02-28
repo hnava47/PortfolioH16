@@ -1,4 +1,5 @@
 require('dotenv').config();
+import sslRedirect from 'heroku-ssl-redirect';
 const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
@@ -15,13 +16,7 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-if (process.env.NODE_ENV === 'production') {
-    app.use((req, res) => {
-        if (req.header('x-forwarded-proto') !== 'https') {
-            return res.redirect(`https://${req.header('host')}${req.url}`);
-        }
-    })
-}
+app.use(sslRedirect());
 app.use(routes);
 
 app.listen(PORT, () => console.log(`Server listening to PORT: ${PORT}`));
