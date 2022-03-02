@@ -253,18 +253,8 @@ h3 {
 
 }
 
-.carousel-control-prev {
-    left: -110px;
-    border-bottom: 0;
-    font-size: 40px;
-    color: #444;
-}
-
-.carousel-control-next {
-    right: -110px;
-    border-bottom: 0;
-    font-size: 40px;
-    color: #444;
+.carousel-github {
+    font-size: 2em;
 }
 
 #contactCard {
@@ -275,6 +265,10 @@ h3 {
 @media screen and (max-width: 768px) {
     .custom-btn {
         margin: 10px;
+    }
+
+    .carousel-github {
+        font-size: 1.5em;
     }
 
     #contactCard {

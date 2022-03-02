@@ -4,7 +4,7 @@ $(document).ready(function() {
     const $contEmail = $('#emailField');
     const $contMessage = $('#messageField');
     const $submitForm = $('#contactForm');
-    const $liveToast = $('#liveToast')
+    const $liveToast = $('#liveToast');
     let elements;
     let windowHeight;
 
