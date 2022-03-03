@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const emailRoutes = require('./emailRoutes');
+const messageRoutes = require('./messageRoutes');
 const { portfolioPage } = require('../controllers/userController');
 
-router.use('/email', emailRoutes);
+router.use('/message', messageRoutes);
 
 router.get('/', portfolioPage);
 

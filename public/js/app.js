@@ -39,7 +39,19 @@ $(document).ready(function() {
                 if (form.checkValidity()) {
                     await $.ajax({
                         method: 'POST',
-                        url: '/email',
+                        url: '/message/email',
+                        headers: { 'Content-Type': 'application/json' },
+                        data: JSON.stringify({
+                            firstName: $contFirstName.val().trim(),
+                            lastName: $contLastName.val().trim(),
+                            email: $contEmail.val().trim(),
+                            message: $contMessage.val().trim()
+                        })
+                    });
+
+                    await $.ajax({
+                        method: 'POST',
+                        url: '/message/sms',
                         headers: { 'Content-Type': 'application/json' },
                         data: JSON.stringify({
                             firstName: $contFirstName.val().trim(),

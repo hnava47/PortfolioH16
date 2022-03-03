@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { sendEmail } = require('../../controllers/userController');
+const { sendEmail } = require('../../../controllers/userController');
 
 router.post('/', sendEmail);
 
