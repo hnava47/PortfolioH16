@@ -77,7 +77,7 @@ h3 {
 .gear-container{
     min-width: 320px;
     max-width: 980px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: block;
     height: 100%;
     position: relative;
@@ -118,7 +118,7 @@ h3 {
 #gear1 {
     background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g1.png') no-repeat 0 0;
     height: 85px;
-    left: 31px;
+    left: 10px;
     top: 45px;
     width: 85px;
 
@@ -129,7 +129,7 @@ h3 {
 #gear2 {
     background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g2.png') no-repeat 0 0;
     height: 125px;
-    left: 105px;
+    left: 84px;
     top: 10px;
     width: 125px;
 
@@ -140,7 +140,7 @@ h3 {
 #gear3 {
     background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g3.png') no-repeat 0 0;
     height: 103px;
-    left: 149px;
+    left: 128px;
     top: 118px;
     width: 103px;
 
@@ -151,7 +151,7 @@ h3 {
 #gear4 {
     background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g4.png') no-repeat 0 0;
     height: 144px;
-    left: 46px;
+    left: 25px;
     top: 173px;
     width: 144px;
 
@@ -162,7 +162,7 @@ h3 {
 #gear5 {
     background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g1.png') no-repeat 0 0;
     height: 85px;
-    left: 127px;
+    left: 106px;
     top: 292px;
     width: 85px;
 
@@ -173,7 +173,7 @@ h3 {
 #gear6 {
     background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g2.png') no-repeat 0 0;
     height: 125px;
-    left: 200px;
+    left: 179px;
     top: 283px;
     width: 125px;
 
@@ -184,7 +184,7 @@ h3 {
 #gear7 {
     background: url('http://www.rudebox.org.ua/demo/animated-mechanism-using-css3/images/g3.png') no-repeat 0 0;
     height: 103px;
-    left: 277px;
+    left: 256px;
     top: 217px;
     width: 103px;
 
