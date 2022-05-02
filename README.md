@@ -31,9 +31,6 @@ This project is meant to create and develop a personal portfolio page. This page
 
 ![Contact][contact-screenshot]
 
-You can access the updated website at the following link:
-* [Deployed Application]()
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## License
